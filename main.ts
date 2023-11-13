@@ -20,13 +20,13 @@ let mySprite = sprites.create(img`
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
 let number = randint(1, 10)
-let guess = game.askForNumber("1 to 10")
+let guess = 0
+while (guess < 1) {
+    guess = game.askForNumber("Guess my number. It's between 1 and 10.")
+    mySprite.sayText("Sorry! That's too low.")
+}
 if (guess == number) {
     mySprite.sayText("Great Job!")
 } else if (false) {
     mySprite.sayText("Sorry! That's not my number.")
-} else if (number < guess) {
-    mySprite.sayText("Sorry! That's too high.")
-} else if (number > guess) {
-    mySprite.sayText("Sorry! That's too low.")
 }

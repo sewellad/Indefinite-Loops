@@ -1,5 +1,5 @@
 {
-    "name": "guess the number",
+    "name": "Indefinite Loops",
     "description": "",
     "dependencies": {
         "device": "*"
